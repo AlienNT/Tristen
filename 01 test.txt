@@ -1,1 +1,2 @@
 test file
+<!doctype HTML5>
