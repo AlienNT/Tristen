@@ -14,17 +14,18 @@ div {
 }
 div > h1,h3,p {
     width: 90%;
+
     margin: 20px auto 20px;
 }
 p:first-of-type::first-letter {
     line-height: 0.8;
     float: left;
-    font-size: 80px;
+    font-size: 120px;
     letter-spacing: -7px;
     font-family: "Times New Roman", sans-serif;
     font-weight: 500;
     margin: 0 10px 0 0;
-    padding: 0 0 0 0;
+    padding: 0 10px 0 0;
 }
 p {
     font-family: 'Muli', sans-serif;
