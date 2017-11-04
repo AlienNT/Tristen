@@ -1,0 +1,107 @@
+main {
+}
+section {
+    min-height: 100vh;
+    line-height: 1.45;
+}
+.s1 {
+    background: #23232e;
+    color: white;
+
+}
+.s2 {
+    background: #ffffff;
+    color: #464b4f;
+
+}
+.art1 {
+    min-height: 100vh;
+}
+.art1> * {
+    background: none;
+    /*text-align: center;*/
+    /*min-height: 100vh;*/
+
+}
+img {
+    padding-top: 8.5%;
+    display: block;
+    border: none;
+    margin: 0 auto 8%;
+    width: 7%;
+    height: auto;
+    box-sizing: border-box;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 386%;
+    text-align: center;
+    /* letter-spacing: -0.5px; */
+    margin: 8.3% auto 0;
+
+
+}
+.par_s1 {
+    font-size: 93%;
+    display: block;
+    width: 23%;
+    margin: 1.7% auto 0;
+    line-height: 1.7;
+}
+
+.button {
+    width: 100%;
+    height: auto;
+    margin: 377% 0 0 0;
+    box-sizing: border-box;
+    display: block;
+    vertical-align: bottom;
+}
+button{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+}
+button, .button {
+    outline: none;
+}
+.h_2 {
+    margin: 5% 0 0 0;
+}
+p {
+    max-width: 45%;
+    display: block;
+    text-align: center;
+    font-size: 154%;
+    margin: 0 auto 0;
+
+}
+.art2 p:first-child {
+    margin: 6% auto 0;
+}
+.art2 p:last-of-type {
+    margin: 2% auto 0;
+}
+h3 {
+    font-size: 100%;
+    margin: 0 0 0 0;
+}
+.tb > li {
+    display: inline-block;
+    max-width: 32.9%;
+    font-size: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.tb {
+    display: block;
+    margin: 3.3% auto;
+    padding: 0 0 0 0;
+    width: 51%;
+    box-sizing: border-box;
+}
