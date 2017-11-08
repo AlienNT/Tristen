@@ -219,7 +219,6 @@ input[placeholder] {
     font-size: 0;
     padding: 15px 0 0 0;
 
-
 }
 .img li {
     display: inline-block;
@@ -231,6 +230,13 @@ input[placeholder] {
     box-sizing: content-box;
     margin: 34px 34px 0 0;
     padding: 0;
+}
+.img li img:hover {
+    
+
+}
+.img li:hover {
+
 }
 .links {
     margin: 70px auto 0;
