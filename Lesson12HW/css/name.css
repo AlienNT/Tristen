@@ -31,25 +31,25 @@ body {
     left: 0;
 }
 .dark_blue{
-    background: rgba(3, 19, 36, 0.81);
+    background: rgba(3, 19, 36, 0.9);
     -webkit-box-shadow: 0 0 300px 16px rgba(3,19,36,0.4);
     -moz-box-shadow: 0 0 300px 16px rgba(3,19,36,0.4);
     box-shadow: 0 0 300px 16px rgba(3,19,36,0.4);
 }
 .white{
-    background: rgba(75, 73, 80, 0.8);
+    background: rgba(75, 73, 80, 0.9);
     -webkit-box-shadow: 0 0 300px 16px rgba(125, 132, 141, 0.4);
     -moz-box-shadow: 0 0 300px 16px rgba(75, 84, 96, 0.4);
     box-shadow: 0 0 300px 16px rgba(75, 84, 96, 0.4);
 }
 .red{
-    background: rgba(105, 52, 46, 0.81);
+    background: rgba(105, 52, 46, 0.9);
     -webkit-box-shadow: 0 0 300px 16px rgba(136, 26, 26, 0.4);
     -moz-box-shadow: 0 0 300px 16px rgba(136, 26, 26, 0.4);
     box-shadow: 0 0 300px 16px rgba(136, 26, 26, 0.4);
 }
 .blue {
-    background: rgba(0, 72, 76, 0.8);
+    background: rgba(0, 72, 76, 0.9);
     -webkit-box-shadow: 0 0 300px 16px rgba(0, 228, 235, 0.4);
     -moz-box-shadow: 0 0 300px 16px rgba(0, 228, 235, 0.4);
     box-shadow: 0 0 300px 16px rgba(0, 228, 235, 0.4);
