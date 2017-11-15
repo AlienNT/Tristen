@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl 100';
+    src: url('../Fonts/MuseoSansCyrl-100.woff2') format('woff2'),
+    url('../Fonts/MuseoSansCyrl-100.woff') format('woff'),
+    url('../Fonts/MuseoSansCyrl-100.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    font-size: 0;
+    font-family: 'Museo Sans Cyrl 100', sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    background: url(../Images/main_bg.png) no-repeat center;
+    background-size: cover;
+    color:#e1e1e1;
+}
+.product-content {
+    margin: auto;
+    width: 800px;
+    background: #031324;
+    -webkit-box-shadow: 0 0 120px 16px rgba(3,19,36,0.7);
+    -moz-box-shadow: 0 0 120px 16px rgba(3,19,36,0.7);
+    box-shadow: 0 0 120px 16px rgba(3,19,36,0.7);
+    border-radius: 10px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.product-slider div {
+    float: left;
+}
+.product-content img{
+    margin: 2%;
+}
+.product-slider__main-img {
+    min-width: 330px;
+    width:65%;
+    display: inline-block;
+    box-sizing: border-box;
+    /*position: relative;*/
+    /*height: 100%;*/
+}
+.product-slider__main-img img{
+    margin: 15%;
+    width: 75%;
+}
+.product-info {
+    max-width: 25%;
+    display: inline-block;
+}
+.product-info h1{
+    font-size: 24px;
+    color: #e1e1e1;
+    opacity: 0.9;
+}
+.product-info h2{
+    font-size: 14px;
+    color: #e1e1e1;
+    opacity: 0.4;
+}
+.product-rating {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 20px;
+
+}
+.product-rating li {
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+
+
+}
+.product-rating__star {
+    background-image: url(../Images/Star.png);
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+.product-rating__star--active {
+    background-image: url(../Images/star_active2.png);
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+.product-size,
+.product-qty,
+.add-cart{
+    position: absolute;
+    /*position: relative;*/
+    color: #e1e1e1;
+    font-size:15px;
+    border: solid 1px #727a82;
+    padding: 7px 10px 7px 10px;
+    text-decoration: none;
+    
+}
+.product-size:hover,
+.product-qty:hover {
+    background: #162332;
+}
+.product-size {
+    top: 255px;
+}
+.product-qty {
+    top: 255px;
+    right: 134px;
+}
+
+.product-size:after,
+.product-qty:after {
+    content: url("../Images/Rectangle.png");
+    padding:  0 0 0 10px;
+}
+.add-cart {
+    padding: 10px 50px 10px 50px;
+    bottom: 140px;
+    background: #162332;
+}
+.add-cart:hover {
+    background: #232c46;
+}
+.product-slider-thumbnails{
+    position: absolute;
+    left: 240px;
+    bottom: 45px;
+}
+.product-slider-button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: inline-block;
+    margin: 5px;
+
+}
+.product-slider-button:hover{
+    border: solid 3px #7d848d;
+    border-radius: 50%;
+}
+.product-slider-thumbnails .product-slider-button:first-child{
+    background: #15223d;
+
+}
+.product-slider-thumbnails .product-slider-button:nth-child(2){
+    background: #ffffff;
+
+}
+.product-slider-thumbnails .product-slider-button:nth-child(3){
+    background: #ff2f2f;
+
+}
+
+.product-slider-thumbnails .product-slider-button:last-child{
+    background: #00e4eb;
+
+}
+
