@@ -73,7 +73,7 @@ body {
     width: 75%;
 }
 .product-info {
-    max-width: 30%;
+    max-width: 35%;
     display: inline-block;
 }
 .product-info h1{
@@ -91,7 +91,7 @@ body {
     margin: 0;
     position: relative;
     top: 10px;
-    right: 202px;
+    right: 250px;
 }
 .product-rating li {
 
