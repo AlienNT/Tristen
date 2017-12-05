@@ -1,41 +1,53 @@
 @import "ionicons";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900');
 
-@mixin btn($bg, $color:#fff) {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  //padding: 15px;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background: $bg;
-  color: $color;
-  line-height: 60px;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Raleway', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+@mixin btn($br, $bg, $color: #fff) {
+  //border-color: $br;
+  //color: $color;
   &:hover {
-    background: lighten($bg, 15%);
+    background: darken($bg, 18%);
+    border-color: darken($br, 18%);
+    color: darken($color, 18%);
   }
 }
 
 $grayColor: #898f8f;
 $goldColor: #ffcc00;
+$litegrayColor: #cccccc;
+$darcgrayColor: #666666;
+$blackColor: #333333;
 
 //comments
 html, body {
   min-height: 100vh;
 }
 
+* {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
-
-//main {
-//  padding: 5px;
-//}
 
 .content-inner {
   max-width: 1170px;
   margin: 0 auto;
   padding: 25px;
+  //background: gray;
+}
+
+main {
+  height: 100vh;
+  min-width: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -44,12 +56,22 @@ header {
   h3 {
     font-size: 18px;
     color: $grayColor;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
   }
   h1 {
     font-size: 60px;
     color: $goldColor;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
 
   }
+}
+
+header * {
+  margin: 0;
 }
 
 .slider {
@@ -69,25 +91,26 @@ header {
   &:after {
     font-family: Ionicons, sans-serif;
     content: $ionicon-var-bonfire;
-    color: $goldColor;
+    color: #ffcc00;
     background: white;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 30px;
     text-align: center;
     line-height: 20px;
     position: absolute;
     top: -10px;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -15px;
 
   }
   &-arrows {
     a {
       position: absolute;
-      top: 41%;
+      top: 47%;
+      font-size: 25px;
       text-decoration: none;
-      color: $goldColor;
+      color: #ffcc00;
       &.ion-chevron-left {
         left: 0;
       }
@@ -101,7 +124,7 @@ header {
     &-img, &-text {
       width: 50%;
       float: left;
-      height: 560px;
+      height: 460px;
     }
     &-img {
       border-right: 1px solid $goldColor;
@@ -109,19 +132,23 @@ header {
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       &-wrapper {
-        width: 418px;
-        height: 418px;
-        border: 1px solid $goldColor;
-        margin: 35px auto;
+        width: 70%;
+        height: auto;
+        border: 1px solid #ffcc00;
+        margin: 45px auto;
         position: relative;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 13px;
+        padding: 15px;
         img {
           border: 1px solid $goldColor;
           position: relative;
           z-index: 1;
+          height: auto;
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: -4px;
         }
         &:before, &:after {
           background: white;
@@ -131,17 +158,17 @@ header {
 
         }
         &:before {
-          width: 101%;
-          height: 30%;
-          left: -0.5%;
-          top: 35%;
+          width: 102%;
+          height: 50%;
+          left: -1%;
+          top: 25%;
 
         }
         &:after {
-          height: 101%;
-          width: 30%;
-          top: -0.5%;
-          left: 35%;
+          height: 102%;
+          width: 50%;
+          top: -1%;
+          left: 25%;
         }
       }
 
@@ -154,28 +181,111 @@ header {
   }
 }
 
-//.button {
-//  text-decoration: none;
-//  text-align: center;
-//  display: inline-block;
-//  //padding: 15px;
-//  height: 60px;
-//  width: 60px;
-//  border-radius: 50%;
-//  background: darkblue;
-//  color: white;
-//  line-height: 60px;
-//  &.green {
-//    background: green;
-//  }
-//  &.red {
-//    background: darkred;
-//  }
-//}
-.button {
-  @include btn (darkblue)
+.link-box {
+  a {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    line-height: 29px;
+    border: 2px solid $litegrayColor;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: $litegrayColor;
+    @include btn($litegrayColor, rgba(255, 255, 255, 0), $litegrayColor);
+  }
 }
 
-.link {
-  @include btn (darkred, #ccc)
+.slide-text {
+  padding-top: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #666666;
+  h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  h4 {
+    width: 15%;
+    height: 1px;
+    background: $goldColor;
+
+  }
+  p {
+    color: #333333;
+    font-size: 14px;
+    width: 75%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+  }
 }
+
+.slide-text > * {
+  margin: 0 auto;
+}
+
+.line {
+  width: 10%;
+  height: 5px;
+  font-size: 0;
+  span {
+    height: 5px;
+    background: $goldColor;
+    display: inline-block;
+  }
+  span:nth-child(2) {
+    width: calc(60% - 10px);
+    margin: 0 5px;
+  }
+  span:first-of-type, span:last-of-type {
+    width: 20%;
+  }
+
+}
+
+.slide-button {
+  margin: 30px auto 0;
+  width: max-content;
+  a {
+    padding: 5px;
+    margin: 1px 2px;
+    background: $goldColor;
+    display: inline-block;
+    border-radius: 50%;
+    @include btn($goldColor, $goldColor);
+
+  }
+  a:focus {
+    background: white;
+    border: 1px solid $goldColor;
+    margin: 0 1px;
+
+  }
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: $darcgrayColor;
+  border: 1px solid $goldColor;
+  font-size: 14px;
+  padding: 2px 15px;
+  @include btn($goldColor, rgba(255, 255, 255, 0), $darcgrayColor);
+
+}
+

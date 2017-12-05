@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="53" height="7" viewBox="0 0 53 7">
+  <defs>
+    <style>
+
+      .cls-3 {
+        stroke: #ffcc00;
+        stroke-width: 3px;
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="boxessvg">
+    <rect id="rect-1" class="cls-3" x="16" y="1" width="20" height="4"/>
+    <rect id="rect-2" class="cls-3" x="41" y="1" width="10" height="4"/>
+    <rect id="rect-3" class="cls-3" x="1" y="1" width="10" height="4"/>
+  </g>
+</svg>
