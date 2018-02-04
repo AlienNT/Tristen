@@ -1,0 +1,4 @@
+[Tue Dec 05 2017 14:04:20 GMT+0200 (Финляндия (зима))] Layer "facebook.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[Tue Dec 05 2017 14:04:14 GMT+0200 (Финляндия (зима))] Layer "twitter.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[Tue Dec 05 2017 17:29:07 GMT+0200 (Финляндия (зима))] Layer "linked.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
+[Tue Dec 05 2017 17:42:14 GMT+0200 (Финляндия (зима))] Layer "google.svg": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.
